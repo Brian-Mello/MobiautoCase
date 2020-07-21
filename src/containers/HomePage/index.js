@@ -12,9 +12,9 @@ export class HomePage extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      marca: "",
-      modelo: "",
-      ano: ""
+      marca: "Selecione",
+      modelo: "Selecione",
+      ano: "Selecione"
     }
   }
 
@@ -26,21 +26,21 @@ export class HomePage extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     const { marca, modelo, ano } = this.state
 
-    if( marca && marca !== prevState.marca ) {
+    if( marca && marca !== prevState.marca && marca && marca !== "Selecione") {
 
       const { getModelos } = this.props;
 
       getModelos(marca)
 
-      this.setState({modelo: "", ano: ""})
+      this.setState({modelo: "Selecione", ano: "Selecione"})
     }
 
-    if( modelo && modelo !== prevState.modelo){
+    if( modelo && modelo !== prevState.modelo && modelo && modelo !== "Selecione"){
       const { getAnos } = this.props
       getAnos(marca, modelo)
     }
     
-    if( ano && ano !== prevState.ano){
+    if( ano && ano !== prevState.ano && ano && ano !== "Selecione"){
       const { getValor } = this.props
 
       getValor(marca, modelo, ano)
@@ -96,7 +96,7 @@ export class HomePage extends React.Component {
       </MenuItem>
     )
 
-    const renderDetalhesCard = ano === "" ? "" : (
+    const renderDetalhesCard = ano === "Selecione" || "" ? "" : (
       <VeiculoCard
         marca={detalhes.Marca}
         modelo={detalhes.Modelo}
@@ -117,6 +117,7 @@ export class HomePage extends React.Component {
           name="Marca"
           map={marcasMap}
           value={marca}
+          defaultValue={""}
           onChange={this.handleOnChangeMarca}
         />
         <SelectUI
@@ -124,6 +125,7 @@ export class HomePage extends React.Component {
           name="Modelo"
           map={modelosMap}
           value={modelo}
+          defaultValue={""}
           onChange={this.handleOnChangeModelo}
         />
         <SelectUI
@@ -131,6 +133,7 @@ export class HomePage extends React.Component {
           name="Ano"
           map={anosMap}
           value={ano}
+          defaultValue={""}
           onChange={this.handleOnChangeAno}
         />
       </SearchFormComponent>

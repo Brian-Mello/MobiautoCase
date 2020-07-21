@@ -169,7 +169,7 @@ export const VeiculoCardTipo = styled.div `
 `
 
 export const VeiculoCardValor = styled.div `
-    width: 30%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: flex-start;

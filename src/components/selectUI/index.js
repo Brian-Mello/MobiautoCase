@@ -19,10 +19,10 @@ export function SelectUI(props) {
     const classes = useStyles()
     return(
         <Fragment>
-            <FormControl className={classes.formControl}>
+            <FormControl required className={classes.formControl}>
                 <InputLabel id="selectLabel">{props.label}</InputLabel>
                 <Select labelId="selectLabel" name={props.name} value={props.value} onChange={props.onChange}>
-                <MenuItem selected="selected">Selecione</MenuItem>
+                <MenuItem value="Selecione">Selecione</MenuItem>
                   {props.map}
                 </Select>
             </FormControl>
