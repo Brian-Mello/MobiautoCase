@@ -18,14 +18,6 @@ export const getMarcas = () => async (dispatch) => {
     }
 }
 
-export const setMarca = (marca) => ({
-    type: "SET_MARCA",
-    payload: {
-        marca,
-    }
-})
-
-
 export const setModelos = (modelos) => ({
     type: "SET_MODELOS",
     payload: {
@@ -42,14 +34,6 @@ export const getModelos = (marca) => async (dispatch) => {
     }
 }
 
-export const setModelo = (modelo) => ({
-    type: "SET_MODELO",
-    payload: {
-        modelo,
-    }
-})
-
-
 export const setAnos = (anos) => ({
     type: "SET_ANOS",
     payload: {
@@ -65,13 +49,6 @@ export const getAnos = (marca, modelo) => async (dispatch) => {
         window.alert("erro ao pegar os anos!")
     }
 }
-
-export const setAno = (ano) => ({
-    type: "SET_ANO",
-    payload: {
-        ano
-    }
-})
 
 export const setValor = (valor) => ({
     type: "SET_VALOR",

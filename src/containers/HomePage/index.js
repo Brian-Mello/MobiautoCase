@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import MenuItem from '@material-ui/core/MenuItem';
 import SelectUI from "../../components/selectUI";
-import { getAnos, getMarcas, getModelos, getValor, setAno } from "../../actions";
+import { getAnos, getMarcas, getModelos, getValor } from "../../actions";
 import { HomePageContainer, SearchFormComponent, MainContainer, MainContainerHeader, MainContainerFiltersSection, MainContainerDetalhesSection, Title } from './styled';
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -60,14 +60,6 @@ export class HomePage extends React.Component {
     const { value } = event.target;
 
     this.setState ({ ano: value})
-  }
-
-  handleOnClick = (event) => {
-    event.preventDefault();
-
-    const { ano } = this.state;
-
-    setAno(ano);
   }
 
   render() {
@@ -160,15 +152,13 @@ const mapStateToProps = state => ({
   modelos: state.tabelafipe.todosModelos,
   anos: state.tabelafipe.todosAnos,
   detalhes: state.tabelafipe.valorVeiculo,
-  anoSelecionado: state.tabelafipe.anoSelecionado
 })
 
 const mapDispatchToProps = dispatch =>({
   getMarcas: () => dispatch(getMarcas()),
   getModelos: (marca) => dispatch(getModelos(marca)),
   getAnos: (marca, modelo) => dispatch(getAnos(marca, modelo)),
-  getValor: (marca, modelo, ano) => dispatch(getValor(marca, modelo, ano)),
-  setAno: (ano) => dispatch(setAno(ano))
+  getValor: (marca, modelo, ano) => dispatch(getValor(marca, modelo, ano))
 })
 
 export default connect(
