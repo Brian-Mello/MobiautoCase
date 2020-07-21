@@ -1,90 +1,23 @@
-# Teste para Desenvolvedor Frontend
+# Mobiauto tabela fipe Front-end
+Projeto feito para a mobiauto para desenvolvedores Frontend
 
-- Crie uma pasta com a seu nome
+## STACK
+O Frontend web desse projeto teve seus arquivos divididos em seus seções, explicadas a seguir. `Components` onde são guardados os inputs, cards de post, cards de comentários e afins. Os `Containers` são as páginas que guardam a lógica de união entre componentes para mostrar na tela. As `Actions` armazenam as requisições feitas pela API. As Pasta `Images` armazena o logotipo utilizado no header. O `Reducer` contém as informações que foram requisitadas nas actions de tal forma que possam ser usadas globalmente no projeto. Por fim, o `Style` armazena o thema do material-ui utilizado no projeto.
 
-- Clone o repositorio https://github.com/Mobiauto/frontend-test-boilerplate
+## Tecnologias e serviços utilizadas
+Nesse projeto foram utilizados: ReactJs, Redux, Redux-thunk, javascript, Material-ui, HTML, CSS, styled-components, jest, react-test-renderer, react-router, netflify para o hosting do site e gerenciadores de pacotes do Nodejs: yarn e npm.
 
-- Siga as instruções abaixo para rodar o boilerplate 
+## Sobre
+Esse é um projeto frontend que busca consumir os dados da API ***http://deividfortuna.github.io/fipe/***. Esse projeto tinha como objetivo filtrar o dados da tabela fipe, e no final retornar todos os dados do veículo escolhido. Ele possui um select que trás as marcas. Ao selecionar a marca, o usuário pode selecionar o modelo do veículo e por último, selecionar o ano do veículo. Após o usuário selecionar o três campos, os dados completos do veículo selecionado são renderizados dentro de um card. 
+***OBS: O usuário só poderá selecionar o modelo, caso tenha selecionado a marca e só poderá selecionar o ano caso tenha selecionado a marca e o modelo.***
 
-- O teste consiste em consultar esta API (http://deividfortuna.github.io/fipe/) e trazer os resultados na tela da melhor forma possível.
+## Instruções para rodar
+Por ser um projeto com ReactJS, há a necessidade do NodeJS. Com ele em sua máquina, basta abrir o ***TERMINAL*** e navegar até o repositório clonado e rodar:
+1. `cd MobiautoCase/` para navegar até o repositório clona;
+1. `npm install`, `npm i` ou `yarn` para instalar todas as dependências;
+1. `npm run start` ou `yarn start` para rodar localmente o projeto;
+1. `npm run build` ou `yarn build` para gerar uma versão estática do projeto (que ficará na pasta `build`);
+1. `npm run test` ou `yarn test` para rodas os testes feitos;
 
-- A ideia é ir filtrando as informações da API em 4 passos ou telas distintas: Marcas, Modelos, Anos e Valor.
-
-- Use algum gerenciador de estado (MobX ou Redux), preferencialmente MobX.
-
-Boa sorte! 
-
-
-
-
-
-
-
-## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Deploy do projeto
+link do deploy: ***https://mobiautocase.netlify.app/***
