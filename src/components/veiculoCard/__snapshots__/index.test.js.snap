@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando integridade do VeiculoCard component  VeiculoCard snapshot 1`] = `
+<div
+  className="sc-AxjAm bVotXy"
+>
+  <header
+    className="sc-AxirZ fgzlPM"
+  >
+    <b>
+      Detalhes
+    </b>
+  </header>
+  <main
+    className="sc-AxiKw bAuRlc"
+  >
+    <div
+      className="sc-AxhUy ghVtQG"
+    >
+      <div
+        className="sc-AxgMl hWdEql"
+      >
+        <b>
+          Marca:
+        </b>
+         
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+      <div
+        className="sc-Axmtr fjRRTW"
+      >
+        <b>
+          Combutível:
+        </b>
+         
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-AxhUy ghVtQG"
+    >
+      <div
+        className="sc-AxheI TibKV"
+      >
+        <b>
+          Modelo:
+        </b>
+         
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+      <div
+        className="sc-fzozJi lbrYUd"
+      >
+        <b>
+          Ano: 
+        </b>
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-AxhUy ghVtQG"
+    >
+      <div
+        className="sc-AxmLO dOvmXS"
+      >
+        <b>
+          Sigla Combustível:
+        </b>
+         
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+      <div
+        className="sc-fzoLsD fEmEup"
+      >
+        <b>
+          Código Fipe: 
+        </b>
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+    </div>
+    <div
+      className="sc-AxhUy ghVtQG"
+    >
+      <div
+        className="sc-fzpans shZcn"
+      >
+        <b>
+          Mês Referência: 
+        </b>
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+      <div
+        className="sc-fzplWN bBpGtS"
+      >
+        <b>
+          Tipo: 
+        </b>
+        <p
+          className="sc-fznKkj fRNxDO"
+        />
+      </div>
+    </div>
+  </main>
+  <footer
+    className="sc-AxhCb fDdlYH"
+  >
+    <div
+      className="sc-fznyAO jfbJtN"
+    >
+      <b>
+        Valor: 
+      </b>
+      <p
+        className="sc-fznKkj fRNxDO"
+      />
+    </div>
+  </footer>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando integridade do Header component Header snapshot 1`] = `
+<header
+  className="sc-AxjAm hyVwrJ"
+>
+  <img
+    className="sc-AxirZ cbAJKz"
+    src="logo.png"
+  />
+</header>
+`;
