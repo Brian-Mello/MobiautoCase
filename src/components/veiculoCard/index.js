@@ -24,7 +24,7 @@ export function VeiculoCard(props){
                 </VeiculoCardItemsRows>
             </VeiculoCardBody>
             <VeiculoCardFooter>
-                <VeiculoCardValor><b>Valor: </b><Text>{props.valor}</Text></VeiculoCardValor>
+                <VeiculoCardValor><b>Valor: </b><b><Text>{props.valor}</Text></b></VeiculoCardValor>
             </VeiculoCardFooter>
         </VeiculoCardComponent>
     )
