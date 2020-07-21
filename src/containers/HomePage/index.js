@@ -28,8 +28,11 @@ export class HomePage extends React.Component {
 
     if( marca && marca !== prevState.marca ) {
 
-      const { getModelos } = this.props
+      const { getModelos } = this.props;
+
       getModelos(marca)
+
+      this.setState({modelo: "", ano: ""})
     }
 
     if( modelo && modelo !== prevState.modelo){
