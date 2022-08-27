@@ -21,3 +21,9 @@ Por ser um projeto com ReactJS, há a necessidade do NodeJS. Com ele em sua máq
 
 ## Deploy do projeto
 link do deploy: ***https://mobiautocase.netlify.app/***
+
+Quantidade | Descrição | Valor | Valor Total
+-------- | ------- | ------- | -------
+2 | KIT INTIMISSIMI COM 2 SETS DE LINGERIE (2 CALCINHAS E 2 SUTIÃS) DE ACORDO COM A NUMERAÇÃO E ESCOLHA DA VENCEDORA, DE ACORDO COM A DISPONIBILIDADE DE ESTOQUE:\n\n ROBE DE SEDA\n\n NECESSAIRE\n\n VELA\n\n CANECA DA MARCA\n\n SACHE PERFUMADO PARA GAVETAS\n\n MÁSCARA DE SEDA | R$ 1000,00 | R$ 2000,00\n\n
+------- | ------- | ------- | --------
+Total |      |       | R$ 2000,00
